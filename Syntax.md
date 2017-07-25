@@ -29,7 +29,7 @@ Communication statements handle communication between this level and attached pi
 ## Arithmetic statements
 `pass #TODO`
 ## Area statements
-Area statements control the areas directly under this one.  Area statements are `make`, `destroy`, `enter` and `leave`.
+Area statements control current area and the one directly ereunder.  Area statements are `make`, `destroy`, `enter`, `leave`, `start` and `loop`.
 ### `make`
 `make a1` creates area `a1` as an area under this one.
 ### `destroy`
@@ -38,3 +38,7 @@ Area statements control the areas directly under this one.  Area statements are 
 `enter a1` changes the scope to the area `a1`.
 ### `leave`
 `leave` changes the scope to the area directly above.
+### `start`
+`start` marks the beginning of this area's loop.
+### `loop`
+`loop` marks the ending of this area's loop.
